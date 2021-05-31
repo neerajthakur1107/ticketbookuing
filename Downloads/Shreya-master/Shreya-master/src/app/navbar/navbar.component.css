@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+.navbar{
+    background-color:palegreen;
+    border: black 1px;
+    height:10vh;
+}
+#logo{
+    height: 80px;
+    width: 100px;
+    
+}

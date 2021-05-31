@@ -1,0 +1,92 @@
+<div class="imgr">
+  <div class="main-container">
+    <div class="form-container">
+      <h2>Registration</h2>
+      <form [formGroup]="registerForm">
+        <div class="container">
+          <div class="form-group" class="form">
+            <label for="CompanyName">Company name</label>
+            <input type="text" class="form-control" id="CompanyName" formControlName="CompanyName" autocomplete="off"
+              required>
+            <div class="error" *ngIf="registerForm.controls['CompanyName'].hasError('required')
+                 && registerForm.controls['CompanyName'].touched">* Please enter company name</div>
+          </div>
+
+          <div class="form-group" class="form">
+            <label for="Name">Company admin name</label>
+            <input type="text" class="form-control" id="Name" formControlName="Name" required autocomplete="off">
+            <div class="error" *ngIf="registerForm.controls['Name'].hasError('required')
+                && registerForm.controls['Name'].touched">* Please enter company admin name</div>
+          </div>
+          <div class="form-group" class="form">
+            <label for="Designation">Designation</label>
+            <input type="text" class="form-control" id="Designation" formControlName="Designation" autocomplete="off"
+              required>
+            <div class="error" *ngIf="registerForm.controls['Designation'].hasError('required')
+              && registerForm.controls['Designation'].touched">* Please enter designation</div>
+          </div>
+          <div class="form-group" class="form">
+            <label for="Email">Company email</label>
+            <input type="email" class="form-control" id="Email" formControlName="Email" autocomplete="off" required>
+            <div class="error" *ngIf="registerForm.controls['Email'].hasError('required')
+                    && registerForm.controls['Email'].touched">* Please enter email</div>
+
+          </div>
+
+          <div class="form-group" class="form">
+            <label for="MobileNo">Contact number</label>
+            <input type="number" class="form-control" id="MobileNo" formControlName="MobileNo" autocomplete="off"
+              required>
+            <div class="error" *ngIf="registerForm.controls['MobileNo'].hasError('required')
+              && registerForm.controls['MobileNo'].touched">* Please enter mobile number</div>
+          </div>
+
+          <div class="form-group" class="form">
+            <label for="Address">Address</label>
+            <input type="text" class="form-control" id="Address" formControlName="Address" autocomplete="off" required>
+            <div class="error" *ngIf="registerForm.controls['Address'].hasError('required')
+              && registerForm.controls['Address'].touched">* Please enter address</div>
+          </div>
+          <div class="form">
+            <legend class="col-form-label col-sm-6 pt-0">Choose Plan </legend>
+            <div class="form-check-label" for="energy_true"><input class="form-check-input" type="checkbox"
+                formControlName="Energy" class="form-control" name="Energy" id="energy_true" value="true" checked>Energy
+              monitoring service</div>
+            <div class="form-check-label" for="cold_storage_true"><input class="form-check-input" type="checkbox"
+                name="ColdStorage" formControlName="ColdStorage" id="cold_storage_true" value="true" checked>Cold
+              storage monitoring</div>
+          </div>
+          <div class="form-group" class="form">
+            <label for="Password">Password</label>
+            <input class="form-control" id="Password" type="password" class="form-control" formControlName="Password"
+              required>
+            <div class="error" *ngIf="registerForm.controls['Password'].hasError('required')
+              && registerForm.controls['Password'].touched">* Please enter passwword</div>
+
+          </div>
+          <div class="form-group" class="form">
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="ConfirmPassword" formControlName="ConfirmPassword" required>
+            <div class="error" *ngIf="registerForm.controls['ConfirmPassword'].hasError('required')
+              && registerForm.controls['ConfirmPassword'].touched">* Please enter confirm password</div>
+              <div class="error" *ngIf="registerForm.controls['ConfirmPassword'].hasError('validator()')
+              && registerForm.controls['ConfirmPassword'].touched">* password doesn't match</div>
+          
+            </div>
+          <div class="form-group">
+            <button class="btn btn-primary" type="submit" (click)="sendOTP()" (click)="registerCompany()"
+              [disabled]="registerForm.invalid">
+              Submit</button>
+            <div *ngIf="invalidRegistration" class="error">
+              <div>Invalid element . please try again</div>
+            </div>
+          </div>
+          <!--link to login pafe-->
+          <div class="bottom-line">
+            <a [routerLink]="['/login']" routerLinkActive="active">Already registered ? Login</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
