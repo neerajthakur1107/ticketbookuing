@@ -1,0 +1,18 @@
+
+Ticket Details
+
+Ticket Number: 5
+Ticket Price: 200
+Ticket Type: SILVER
+Ticket Time: 12:00
+Ticket Block: Right Block
+____________________________________________________________________________________
+
+Ticket Details
+
+Ticket Number: 6
+Ticket Price: 200
+Ticket Type: SILVER
+Ticket Time: 09:00
+Ticket Block: Right Block
+____________________________________________________________________________________
