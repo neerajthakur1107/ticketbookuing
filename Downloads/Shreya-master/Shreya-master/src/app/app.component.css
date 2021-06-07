@@ -1,0 +1,35 @@
+.head{
+    overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+    
+}
+.head a {
+    
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  button{
+    float: right;
+    text-align: center;
+  
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+     margin: 4px 0;
+      border: none;
+     cursor: pointer;
+     border-radius: 10px;
+  }
+  
+
