@@ -1,0 +1,286 @@
+header {    
+    height:80px; 
+    width:100%;
+}
+  
+.header-logo{
+    float:left;
+    padding-left:50px;
+    padding-bottom:10px;
+}
+  
+.header-logo h1{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    font-size:35;
+    
+}
+  
+.header-list li{
+    float:right;  
+    padding:20px 10px 20px 10px;  
+    list-style-type:none;
+    font-size:30px;
+    margin-right: 10px;
+    margin-left :10px;
+}
+  
+li.tab{
+    font-size:35px;  
+}
+
+li.tab a{
+    text-decoration: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    height:500px;
+}
+
+.text a{
+    text-decoration: none;
+    color:white;
+}
+
+.cu h1{
+    font-size:40px;
+}
+
+.cu h2{
+    font-size:35px;
+}
+
+.cu h3{
+    font-size:30px;
+}
+
+.cont img{
+    height:250px;
+    width:350px;
+}
+
+.cont h2{
+    font-size:30px;
+}
+
+.cont a{
+    text-decoration: none;
+}
+
+table.cont1 td{
+    padding:10px;
+    border:1px solid black;
+}
+
+table.cont1{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+table.cont3 td{
+    padding:10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+table.cont3 a{
+    text-decoration: none;
+}
+
+table.cont3 h3{
+    font-size:25px;
+    box-shadow: 5px 10px #888888;
+    color:black;
+    background-color: white;
+}
+
+table.cont3 table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.cont3 h3:hover{
+    box-shadow: 5px 10px black;   
+}
+
+table.cont3 td:hover{
+    background-color: lightgrey;
+}
+
+table.cont3 img{
+    height:250px;
+    width:470px;
+}
+
+.cont2 table{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont2 td{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+  .footer-list td{
+    border:none;
+  }
+
+  .fab{
+    padding:10px;
+  }
+  
+  .footer-list h2{
+  text-align:center;
+  color:white;
+  font-family: cursive;
+  }
+
+  .button 
+{
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f70f22;
+  margin : 35px;
+  display: flex;
+
+}
+.button1:hover {
+  background-color: #f70f22;
+  color: white;
+}
+.button2 
+{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #0051ff;
+  margin : 35px;
+  display: flex;
+}
+.button2:hover 
+{
+  background-color: #0051ff;
+  color: white;
+}
+.info
+{
+  text-align: center;
+}
+.about h2
+{
+  text-align: center;
+}
+.about
+{
+  border: 3px solid grey;
+  padding: 35px;
+  margin: 35px;
+}
+.image img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buttons
+{
+  margin-left:auto;
+  margin-right:auto;
+}
+.buttons td
+{
+  justify-content: center;
+  align-items: center;
+}
