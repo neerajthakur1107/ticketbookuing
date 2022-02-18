@@ -1,0 +1,204 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css";>
+    <script src="https://kit.fontawesome.com/6236e2151f.js" crossorigin="anonymous"></script>
+    <title>BookIt</title>  
+  </head>
+  <body>
+    <!--Header-->
+    <header style="background-color:black">
+      <div class = "header-logo">
+        <h1>BookIt<h1>
+      </div>
+     <div class = "header-list">
+       <ul>
+        <li class = "tab"><a href="contactUs.html" style="color:white;">Contact us</a></li>
+         <li class = "tab"><a href="sport.html" style="color:white;">Sport</a></li>
+         <li class = "tab"><a href="kids.html" style="color:white;">Kids</a></li>
+         <li class = "tab"><a href="movies.html" style="color:white;">Movies</a></li>       
+         <li class = "tab"><a href="home.html" style="color:white;">Home</a></li>
+       </ul>
+     </div>          
+    </header>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="https://velivada.com/wp-content/uploads/2020/09/article-15-review.jpg" style="width:100%">
+          <div class="text"><a href="article15.php">Article 15</a></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="https://jiocinemaweb.cdn.jio.com/jioimages.cdn.jio.com/content/entry/dynamiccontent/thumbs/1680/-/0/84/12/0_i5ijlaj1_1557497777105_l_medium.jpg" style="width:100%">
+          <div class="text"><a href="kahaani.php">Kahaani</a></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Capitals-Maple_Leafs_%2834075134291%29.jpg/1200px-Capitals-Maple_Leafs_%2834075134291%29.jpg" style="width:100%">
+          <div class="text"><a href="icehockey.php"><span style="color:black;">Ice Hockey</span></style></a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/05A564FBF15F663B857E4018CB779AA947A7042D41370117EE121656FC4EDE4A/scale?width=1200&aspectRatio=1.78&format=jpeg" style="width:100%">
+            <div class="text"><a href="onward.php">Onward</a></div>
+          </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="https://i2.wp.com/www.smartprix.com/bytes/wp-content/uploads/2018/04/chess-featured-smartprix.jpg?fit=1200%2C630&ssl=1" style="width:100%">
+          <div class="text"><a href="chess.php">Chess</a></div>
+        </div>
+
+    </div>
+    <br>
+        
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+        
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+    <div class="cont">
+        <table>
+            <tr>
+                <td>
+                    <table class="cont1">
+                        <tr>
+                            <td colspan="4" style="border:none;">
+                                <h2>Movies</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href = "znmd.php"><img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190123185617/ZMND-POSTER.jpg"></a>            
+                            </td>
+                            <td>
+                                <a href = "skyispink.php"><img src="https://i.ytimg.com/vi/prwUFBsDRLk/maxresdefault.jpg"></a>                        
+                            </td>
+                            <td>
+                                <a href = "piku.php"><img src="https://static.toiimg.com/photo/51826229.cms"></a>            
+                            </td>
+                            <td>
+                                <a href = "newton.php"><img src="https://i.ytimg.com/vi/F5ZMNflFZ-A/maxresdefault.jpg"></a>            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="border:none;">
+                                <h5><a href="movies.html">More...</a></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="cont1">
+                        <tr>
+                            <td colspan="4" style="border:none;">
+                                <h2>Kids</h2>            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href = "ralph.php"><img src="https://whatsondisneyplus.com/wp-content/uploads/2020/10/ralph-breaks-the-internet-1024x576.jpg"></a>
+                            </td>
+                            <td>
+                                <a href = "artemisFowl.php"><img src="https://www.arc.unsw.edu.au/generated/hero-large/artemis-fowl-1-jpeg.jpg?1593424949"></a>
+                            </td>
+                            <td>
+                                <a href = "lionking.php"><img src="https://whatwentwrongwith.files.wordpress.com/2019/07/wwww-the-lion-king-2019.jpg?w=1300"></a>
+                            </td>
+                            <td>
+                                <a href = "frozen2.php"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C213A77347283CA7993BC5D842FA992358C4B39A7DD5D6B0A61447846E078419/scale?width=1200&aspectRatio=1.78&format=jpeg"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="border:none;">
+                                <h5><a href="kids.html">More...</a></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="cont1">
+                        <tr>
+                            <td colspan="4" style="border:none;">
+                                <h2>Sports</h2>            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href = "icehockey.php"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Capitals-Maple_Leafs_%2834075134291%29.jpg/1200px-Capitals-Maple_Leafs_%2834075134291%29.jpg"></a>
+                            </td>
+                            <td>
+                                <a href = "cricket.php"><img src="https://images.newindianexpress.com/uploads/user/imagelibrary/2020/9/6/w900X450/Cricket_Ball_AP.jpg"></a>
+                            </td>
+                            <td>
+                                <a href = "tennis.php"><img src="https://photoresources.wtatennis.com/photo-resources/2019/08/15/dbb59626-9254-4426-915e-57397b6d6635/tennis-origins-e1444901660593.jpg?width=1024&height=512"></a>
+                            </td>
+                            <td>
+                                <a href = "rugby.php"><img src="https://www.lboro.ac.uk/media/media/sport/images/sports/rugby-union/landing-parallax.jpg"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="border:none;">
+                                <h5><a href="sport.html">More...</a></h5>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+
+    <!--Footer-->
+    <footer style="background-color:black">
+        <div class = "footer-list">    
+          <h2>Connect with us</h2>
+          <table style="margin-left:auto;margin-right:auto;border:none">
+            <tr>
+                <td><a href="https://www.facebook.com/>"><i class="fab fa-facebook" style="font-size: 40px;color:blue"></i></a></td>
+                <td><a href="https://www.instagram.com/"><i class="fab fa-instagram" style="font-size: 40px;color:red"></i></a></td>
+                <td><a href="https://twitter.com/"><i class="fab fa-twitter" style="font-size: 40px;color:lightskyblue"></i></a></td>
+                <td><a href="https://www.youtube.com/>"><i class="fab fa-youtube" style="font-size: 40px;color:red"></i></a></td>
+            </tr>
+          </table>                 
+        </div>
+    </footer>         
+        
+    </body>
+  </html>
